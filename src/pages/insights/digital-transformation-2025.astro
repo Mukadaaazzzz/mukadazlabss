@@ -1,0 +1,149 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const pageData = {
+    title: "Digital Transformation 2025: Mastering the Next Horizon",
+    category: "Research Report",
+    readTime: "15 min read",
+    publishDate: "January 5, 2025",
+    heroImage: "/company/h.jpg"
+};
+---
+<Layout title={pageData.title}>
+    <section class="bg-white">
+        <!-- Hero Section -->
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+            <div class="text-center">
+                <div class="inline-flex items-center bg-blue-100 text-blue-700 px-4 py-1 rounded-full mb-6">
+                    <span class="text-sm font-medium">{pageData.category}</span>
+                </div>
+                <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
+                    {pageData.title}
+                </h1>
+                <p class="mt-4 text-gray-600">{pageData.readTime} • {pageData.publishDate}</p>
+            </div>
+            <div class="mt-10">
+                <img
+                    src={pageData.heroImage}
+                    alt="Digital Transformation Hero"
+                    class="rounded-lg shadow-md object-cover h-[400px] w-full sm:h-[500px]"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+            <!-- Introduction -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Introduction</h2>
+                <p class="mt-4 text-gray-700">
+                    Digital transformation isn't just a buzzword—it's the defining strategy for organizations aiming to thrive in a hyper-competitive, technology-driven world. As we approach 2025, the pressure to evolve has never been greater. Companies must rethink their operational models, embrace innovative technologies, and foster digital-first cultures to meet the expectations of modern consumers and markets.
+                </p>
+                <p class="mt-4 text-gray-700">
+                    This in-depth report delves into the critical trends, challenges, and actionable strategies that will shape the digital transformation journey over the next decade. Drawing from real-world examples, expert insights, and industry forecasts, we provide you with a roadmap to navigate this complex but rewarding terrain.
+                </p>
+            </div>
+
+            <!-- The Evolution of Digital Transformation -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">The Evolution of Digital Transformation</h2>
+                <p class="mt-4 text-gray-700">
+                    Digital transformation has progressed through distinct phases. In its early stages, businesses focused on digitizing analog processes—think document scanning or digital customer records. The advent of cloud computing, mobile devices, and social media ushered in the second wave, emphasizing connectivity and customer engagement.
+                </p>
+                <p class="mt-4 text-gray-700">
+                    Today, we are in the third and most advanced phase: data-driven and AI-powered transformation. This involves leveraging real-time analytics, predictive modeling, and automation to create intelligent systems that not only respond to change but anticipate it. Success in this phase requires a strategic mindset and investment in cutting-edge technologies like generative AI, IoT, and blockchain.
+                </p>
+            </div>
+
+            <!-- Key Trends Driving Digital Transformation in 2025 -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Key Trends Driving Digital Transformation in 2025</h2>
+                <div class="mt-6 space-y-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">1. The Rise of Generative AI</h3>
+                        <p class="mt-4 text-gray-700">
+                            Generative AI tools, such as ChatGPT and image synthesis models, are transforming industries by enabling rapid content creation, decision support, and enhanced personalization. By 2025, over 70% of businesses are expected to integrate generative AI into their core workflows, enabling unprecedented efficiency and creativity.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">2. The Era of Hybrid Cloud and Edge Computing</h3>
+                        <p class="mt-4 text-gray-700">
+                            Enterprises are moving beyond single-cloud solutions, opting for hybrid cloud environments that combine public and private infrastructures. Edge computing, which processes data closer to its source, is also gaining traction, particularly in sectors like healthcare, manufacturing, and logistics.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">3. Digital Sustainability</h3>
+                        <p class="mt-4 text-gray-700">
+                            Environmental, Social, and Governance (ESG) considerations are driving digital transformation strategies. Organizations are investing in technologies that reduce energy consumption, optimize supply chains, and enhance transparency in reporting.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overcoming Common Challenges -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Overcoming Common Challenges</h2>
+                <p class="mt-4 text-gray-700">
+                    Despite its promise, digital transformation comes with significant hurdles. These include:
+                </p>
+                <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
+                    <li>
+                        <strong class="text-gray-900">Cultural Resistance:</strong> Employees and leadership often resist change due to fear of the unknown or perceived risks.
+                    </li>
+                    <li>
+                        <strong class="text-gray-900">Integration Complexities:</strong> Merging new technologies with legacy systems can be costly and time-consuming.
+                    </li>
+                    <li>
+                        <strong class="text-gray-900">Data Security:</strong> Increased digitalization exposes organizations to cyber threats, demanding robust safeguards.
+                    </li>
+                </ul>
+                <p class="mt-4 text-gray-700">
+                    To address these challenges, companies must adopt a comprehensive change management strategy, prioritize security at every layer, and provide ongoing employee training.
+                </p>
+            </div>
+
+            <!-- Strategic Recommendations -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Strategic Recommendations</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold text-gray-800">1. Invest in Digital Skills</h3>
+                        <p class="mt-4 text-gray-700">
+                            Upskilling your workforce is non-negotiable. Equip employees with the tools and knowledge to embrace digital transformation confidently.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold text-gray-800">2. Leverage Data Strategically</h3>
+                        <p class="mt-4 text-gray-700">
+                            Data is the new currency. Invest in advanced analytics platforms to unlock actionable insights that inform decision-making.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold text-gray-800">3. Build Resilience</h3>
+                        <p class="mt-4 text-gray-700">
+                            Prioritize cybersecurity and disaster recovery planning to ensure that your digital initiatives are robust against disruptions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-white py-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Shape Your Future Today</h2>
+            <p class="mt-4 text-gray-600">
+                Our experts are here to help you design and execute a winning digital transformation strategy. Let's make your vision a reality.
+            </p>
+            <div class="mt-6 flex justify-center gap-4">
+                
+                <a href="/insights" class="border border-gray-300 px-6 py-3 rounded-full text-sm font-semibold text-gray-800 hover:bg-gray-100">
+                    More Insights
+                </a>
+            </div>
+        </div>
+    </section>
+</Layout>

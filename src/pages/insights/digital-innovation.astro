@@ -1,0 +1,181 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const pageData = {
+    title: "Accelerating Growth Through Digital Innovation",
+    category: "Industry Insight",
+    readTime: "15 min read",
+    publishDate: "January 9, 2025",
+    
+    heroImage: "/company/f.jpg"
+};
+---
+<Layout title={pageData.title}>
+    <section class="bg-white">
+        <!-- Hero Section -->
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+            <div class="text-center">
+                <div class="inline-flex items-center bg-violet-100 text-violet-700 px-4 py-1 rounded-full mb-6">
+                    <span class="text-sm font-medium">{pageData.category}</span>
+                </div>
+                <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
+                    {pageData.title}
+                </h1>
+                <p class="mt-4 text-gray-600">{pageData.readTime} • {pageData.publishDate}</p>
+            </div>
+            <div class="mt-10">
+                <img
+                    src={pageData.heroImage}
+                    alt="Digital Innovation Accelerating Growth"
+                    class="rounded-lg shadow-md object-cover h-[400px] w-full sm:h-[500px]"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+            <!-- Introduction -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Introduction</h2>
+                <p class="mt-4 text-gray-700">
+                    In a world where digital transformation is the new business imperative, innovation has become the cornerstone of sustainable growth. Companies that embrace digital innovation are not just adapting—they are thriving by reshaping markets, creating new customer experiences, and redefining operational efficiencies.
+                </p>
+                <p class="mt-4 text-gray-700">
+                    This insight delves into how digital innovation accelerates growth, the technologies driving this change, and actionable strategies for businesses to harness its potential.
+                </p>
+            </div>
+
+            <!-- What is Digital Innovation? -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">What is Digital Innovation?</h2>
+                <p class="mt-4 text-gray-700">
+                    Digital innovation refers to the use of advanced technologies to create new—or improve existing—business processes, services, or products. It extends beyond digital transformation by focusing on creativity, experimentation, and rapid iteration to unlock growth opportunities.
+                </p>
+                <p class="mt-4 text-gray-700">
+                    Unlike digital transformation, which modernizes legacy systems, digital innovation introduces groundbreaking solutions to meet the dynamic needs of businesses and consumers in a digital-first world.
+                </p>
+            </div>
+
+            <!-- Technologies Powering Digital Innovation -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Technologies Powering Digital Innovation</h2>
+                <p class="mt-4 text-gray-700">
+                    At the heart of digital innovation are cutting-edge technologies that enable organizations to disrupt industries and redefine value creation. Key technologies include:
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">1. Artificial Intelligence (AI)</h3>
+                        <p class="mt-4 text-gray-700">
+                            AI drives automation, predictive analytics, and intelligent decision-making, empowering businesses to operate smarter and faster.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">2. Internet of Things (IoT)</h3>
+                        <p class="mt-4 text-gray-700">
+                            IoT connects devices, enabling real-time data collection and actionable insights for optimizing operations and enhancing customer experiences.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">3. Blockchain</h3>
+                        <p class="mt-4 text-gray-700">
+                            Blockchain ensures transparency, security, and efficiency in supply chains, financial transactions, and data management.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">4. Cloud Computing</h3>
+                        <p class="mt-4 text-gray-700">
+                            Cloud solutions provide scalability, agility, and cost-efficiency, allowing businesses to innovate without heavy infrastructure investments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Benefits of Digital Innovation -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Key Benefits of Digital Innovation</h2>
+                <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
+                    <li>
+                        <strong class="text-gray-900">Enhanced Customer Experience:</strong> Personalization and seamless digital interactions foster stronger customer relationships.
+                    </li>
+                    <li>
+                        <strong class="text-gray-900">Operational Efficiency:</strong> Automation and data-driven decision-making reduce costs and streamline processes.
+                    </li>
+                    <li>
+                        <strong class="text-gray-900">Increased Agility:</strong> Businesses can adapt rapidly to market changes, staying competitive in fast-evolving industries.
+                    </li>
+                    <li>
+                        <strong class="text-gray-900">Revenue Growth:</strong> Digital products and services unlock new revenue streams and expand market reach.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Real-World Applications of Digital Innovation -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Real-World Applications of Digital Innovation</h2>
+                <p class="mt-4 text-gray-700">
+                    Digital innovation is not just a concept—it is transforming industries worldwide. Here are some standout examples:
+                </p>
+                <div class="mt-6 space-y-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">1. E-commerce</h3>
+                        <p class="mt-4 text-gray-700">
+                            AI-driven recommendations, augmented reality shopping experiences, and predictive inventory management are reshaping retail.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">2. Healthcare</h3>
+                        <p class="mt-4 text-gray-700">
+                            Telemedicine, wearable devices, and AI diagnostics are revolutionizing patient care and improving health outcomes.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">3. Manufacturing</h3>
+                        <p class="mt-4 text-gray-700">
+                            IoT sensors and predictive maintenance are enabling smart factories with unprecedented levels of efficiency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Building a Culture of Digital Innovation -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Building a Culture of Digital Innovation</h2>
+                <p class="mt-4 text-gray-700">
+                    To accelerate growth through digital innovation, organizations must foster a culture that encourages experimentation, agility, and collaboration. Key steps include:
+                </p>
+                <ol class="list-decimal list-inside mt-4 text-gray-700 space-y-2">
+                    <li>
+                        <strong class="text-gray-900">Empowering Teams:</strong> Equip employees with the tools and skills to innovate.
+                    </li>
+                    <li>
+                        <strong class="text-gray-900">Investing in Technology:</strong> Allocate resources to adopt and integrate advanced digital solutions.
+                    </li>
+                    <li>
+                        <strong class="text-gray-900">Collaborating Across Departments:</strong> Break down silos to drive unified innovation strategies.
+                    </li>
+                    <li>
+                        <strong class="text-gray-900">Measuring Impact:</strong> Use data-driven metrics to evaluate the success of innovation initiatives.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-white py-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Embrace Digital Innovation Today</h2>
+            <p class="mt-4 text-gray-600">
+                Digital innovation is the key to staying ahead in today's fast-paced world. Take the first step to transform your business and unlock its full potential.
+            </p>
+            <div class="mt-6 flex justify-center gap-4">
+                
+                <a href="/insights" class="border border-gray-300 px-6 py-3 rounded-full text-sm font-semibold text-gray-800 hover:bg-gray-100">
+                    More Insights
+                </a>
+            </div>
+        </div>
+    </section>
+</Layout>

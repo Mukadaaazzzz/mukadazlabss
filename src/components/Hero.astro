@@ -5,109 +5,150 @@ interface Props {
 const {} = Astro.props;
 ---
 
-<div class="">
-    <div class="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20">
+<div class="relative min-h-screen">
+    <div class="absolute inset-0 bg-gradient-to-br from-violet-900/10 via-transparent to-purple-900/10 animate-gradient-slow"></div>
+    <div class="relative isolate overflow-hidden">
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        </div>
+        
         <div class="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40">
             <div class="px-6 lg:px-0 lg:pt-4">
-                <div class="mx-auto max-w-2xl">
+                <div class="mx-auto max-w-2xl relative">
                     <div class="max-w-lg">
                         <div class="mt-24 sm:mt-32 lg:mt-16">
-                            <a href="#" class="inline-flex space-x-6">
-                                <span class="rounded-full bg-black/80 px-3 py-1 text-sm font-semibold leading-6 text-white ring-1 ring-inset ring-black">What's new</span>
-                                <span class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
-                                    <span>Github repo</span>
-                                    <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
-                                         aria-hidden="true">
-                                        <path fill-rule="evenodd"
-                                              d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                                              clip-rule="evenodd"/>
+                            <div class="inline-flex items-center space-x-6">
+                                
+                                <span class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600 hover:text-purple-700 transition-all duration-300 group cursor-pointer">
+                                    <span class="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-right after:scale-x-0 after:bg-purple-700 after:transition-transform after:duration-300 group-hover:after:origin-left group-hover:after:scale-x-100">
+                                        Mukadaz Labs.
+                                    </span>
+                                    <svg class="h-5 w-5 text-gray-400 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"/>
                                     </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mt-10 relative">
+                            <h1 class="text-5xl sm:text-7xl font-bold tracking-tight bg-clip-text  bg-gradient-to-r from-purple-900 via-violet-800 to-purple-900 animate-gradient-x pb-2">
+                                <span class="block transform hover:scale-105 transition-transform duration-300">Architecting</span>
+                                <span class="block transform hover:scale-105 transition-transform duration-300 delay-100">Digital</span>
+                                <span class="block transform hover:scale-105 transition-transform duration-300 delay-200">Futures</span>
+                            </h1>
+                            <div class="absolute -inset-x-2 -inset-y-2 bg-gradient-to-r from-purple-100 to-violet-100 opacity-10 blur-2xl animate-pulse-slow rounded-3xl"></div>
+                        </div>
+                        <p class="mt-8 text-lg text-gray-600 leading-relaxed animate-fade-in">
+                            Empowering global leaders with next-generation technology solutions. We transform visions into digital reality, driving unprecedented growth and innovation.
+                        </p>
+                        <div class="mt-10 flex items-center gap-x-6">
+                            <a href="#" class="group relative inline-flex items-center justify-center">
+                                <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-violet-600 rounded-lg blur opacity-50 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                                
+                            </a>
+                            <a href="#" class="group text-sm font-semibold leading-6 text-gray-900">
+                                <span class="flex items-center gap-2">
+                                    <span class="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-right after:scale-x-0 after:bg-purple-700 after:transition-transform after:duration-300 group-hover:after:origin-left group-hover:after:scale-x-100">
+                                        Book Strategy Session
+                                    </span>
+                                    <span class="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
                                 </span>
                             </a>
                         </div>
-                        <h1 class="mt-10 text-4xl font-roboto tracking-tight text-gray-900 sm:text-6xl">
-                            Improve communication with your customers
-                        </h1>
-                        <p class="mt-6 text-lg text-gray-600">Anim aute id magna aliqua ad ad non deserunt
-                            sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
-                            aliqua.</p>
-                        <div class="mt-10 flex items-center gap-x-6">
-                            <a href="#"
-                               class="rounded-md bg-white border border-black px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
-                                Signup
-                            </a>
-                            <a href="https://github.com/eavinti/astro-landing"
-                               class="text-sm font-semibold leading-6 text-gray-900">Get the code<span
-                                    aria-hidden="true">→</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen relative perspective">
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-purple-600 to-violet-600 rounded-xl blur-xl opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                    <img id="image"
+                         class="rounded-xl w-full h-auto opacity-0 transition-all duration-1000 ease-out transform hover:scale-[1.02] shadow-2xl"
+                         src="/images/hero-1.jpg"/>
+                    <div class="absolute top-0 right-0 rounded-bl-xl p-6 bg-white/80 backdrop-blur-sm transition-all duration-300">
+                        <div class="flex space-x-2">
+                            <div class="w-2 h-2 rounded-full bg-purple-900 animate-pulse"></div>
+                            <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+                            <div class="w-2 h-2 rounded-full bg-gray-300"></div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="mt-20 px-1 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen relative">
-                <img id="image"
-                     class="rounded-xl top-0 left-0 w-full h-auto opacity-0 transition-opacity duration-1000 ease-in-out"
-                     src="https://uploads-ssl.webflow.com/5ea7fd4e3d52ef73804bc877/640942c2de5aef189fead7de_Screenshot-min-3.png"/>
-                <div class="absolute top-0 right-0 rounded-bl-xl p-6 bg-gray-50">
-                    <svg class="h-2 w-2 inline fill-black mr-2" viewBox="0 0 6 6" aria-hidden="true">
-                        <circle cx="3" cy="3" r="3"/>
-                    </svg>
-                    <svg class="h-2 w-2 inline fill-gray-300 mr-2" viewBox="0 0 6 6" aria-hidden="true">
-                        <circle cx="3" cy="3" r="3"/>
-                    </svg>
-                    <svg class="h-2 w-2 inline fill-gray-300 mr-2" viewBox="0 0 6 6" aria-hidden="true">
-                        <circle cx="3" cy="3" r="3"/>
-                    </svg>
-                </div>
-
-                <div class="absolute bottom-0 right-0 rounded-full m-6 pl-1 pr-4 py-1 bg-black bg-opacity-75 flex items-center">
-                    <img class="inline mr-2 h-9 w-9 rounded-full"
-                         src="./avatar.jpeg"
-                         alt="">
-                    <div class="flex flex-col">
-                        <span class="text-white text-sm font-roboto">Edgar Alejandro</span>
-                        <span class="text-gray-200 text-xs font-nunito">Software developer</span>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
-        <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
     </div>
 </div>
 
+<style>
+    .perspective {
+        perspective: 1000px;
+    }
+    
+    @keyframes gradient-x {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    
+    @keyframes tilt {
+        0%, 100% { transform: rotate(-1deg); }
+        50% { transform: rotate(1deg); }
+    }
+    
+    @keyframes pulse-slow {
+        0%, 100% { opacity: 0.1; }
+        50% { opacity: 0.2; }
+    }
+    
+    .animate-gradient-x {
+        background-size: 200% 200%;
+        animation: gradient-x 15s ease infinite;
+    }
+    
+    .animate-tilt {
+        animation: tilt 10s infinite linear;
+    }
+    
+    .animate-pulse-slow {
+        animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    
+    .animate-gradient-slow {
+        animation: gradient-x 8s ease infinite;
+    }
+    
+    .animate-fade-in {
+        animation: fadeIn 0.8s ease-out;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
 
-<script type="module" client:load>
+<script type="module" >
     const images = [
-        "https://uploads-ssl.webflow.com/5ea7fd4e3d52ef73804bc877/640942c2de5aef189fead7de_Screenshot-min-3.png",
-        "https://uploads-ssl.webflow.com/5ea7fd4e3d52ef73804bc877/63f2acd1cdf34e09cfb7e39e_Screenshot-min-4.png",
-        "https://uploads-ssl.webflow.com/5ea7fd4e3d52ef73804bc877/63f1a16ac16726b1e653e8ca_Screenshot-min.png",
-        // Add more URLs as needed
+        "/images/hero-1.jpg",
+        "/images/hero-2.jpg",
+        "/images/hero-3.jpg",
     ];
     let currentIndex = 0;
     const imageElement = document.getElementById('image');
 
-    // Initially, set the image opacity to 100 to ensure it is visible
     imageElement.classList.remove('opacity-0');
 
     function changeImage() {
-        // Add opacity class 0 to make the current image transparent
         imageElement.classList.add('opacity-0');
+        imageElement.style.transform = 'scale(0.98)';
 
         setTimeout(() => {
-            currentIndex++;
-            if (currentIndex >= images.length) {
-                currentIndex = 0;
-            }
+            currentIndex = (currentIndex + 1) % images.length;
             imageElement.src = images[currentIndex];
-            // Wait for the image to load before making it visible
             imageElement.onload = () => {
-                imageElement.classList.remove('opacity-0'); // Make the new image visible
+                imageElement.classList.remove('opacity-0');
+                imageElement.style.transform = 'scale(1)';
             };
-        }, 1000); // This time should match the duration of the opacity transition
+        }, 1000);
     }
 
-    // Starts image transition every 4 seconds (includes 1 second for transition duration)
     setInterval(changeImage, 4000);
 </script>
