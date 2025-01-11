@@ -109,6 +109,8 @@ const {title} = Astro.props;
     const closeNavBar = document.getElementById('closeNavBar');
     const openNavBar = document.getElementById('openNavBar');
 
+    if (!closeNavBar || !openNavBar || !navBar) return;  // Prevent errors if elements aren't found
+
     closeNavBar.addEventListener('click', toggleMenu);
     openNavBar.addEventListener('click', toggleMenu);
 
@@ -121,5 +123,6 @@ const {title} = Astro.props;
   initializeMenu();
 
   // Re-initialize after page transitions
-  document.addEventListener('astro:page-load', initializeMenu);
+  window.addEventListener('load', initializeMenu); // Ensure it initializes on page load
+  document.addEventListener('astro:page-load', initializeMenu); // For Astro page load transitions
 </script>
