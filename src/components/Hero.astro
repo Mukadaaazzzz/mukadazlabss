@@ -5,150 +5,94 @@ interface Props {
 const {} = Astro.props;
 ---
 
-<div class="relative min-h-screen">
-    <div class="absolute inset-0 bg-gradient-to-br from-violet-900/10 via-transparent to-purple-900/10 animate-gradient-slow"></div>
-    <div class="relative isolate overflow-hidden">
-        <div class="absolute inset-0 -z-10">
-            <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-        </div>
-        
-        <div class="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40">
-            <div class="px-6 lg:px-0 lg:pt-4">
-                <div class="mx-auto max-w-2xl relative">
-                    <div class="max-w-lg">
-                        <div class="mt-24 sm:mt-32 lg:mt-16">
-                            <div class="inline-flex items-center space-x-6">
-                                
-                                <span class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600 hover:text-purple-700 transition-all duration-300 group cursor-pointer">
-                                    <span class="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-right after:scale-x-0 after:bg-purple-700 after:transition-transform after:duration-300 group-hover:after:origin-left group-hover:after:scale-x-100">
-                                        Mukadaz Labs.
-                                    </span>
-                                    <svg class="h-5 w-5 text-gray-400 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"/>
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="mt-10 relative">
-                            <h1 class="text-5xl sm:text-7xl font-bold tracking-tight bg-clip-text  bg-gradient-to-r from-purple-900 via-violet-800 to-purple-900 animate-gradient-x pb-2">
-                                <span class="block transform hover:scale-105 transition-transform duration-300">Built For</span>
-                                <span class="block transform hover:scale-105 transition-transform duration-300 delay-100">What's</span>
-                                <span class="block transform hover:scale-105 transition-transform duration-300 delay-200">Next.</span>
-                            </h1>
-                            <div class="absolute -inset-x-2 -inset-y-2 bg-gradient-to-r from-purple-100 to-violet-100 opacity-10 blur-2xl animate-pulse-slow rounded-3xl"></div>
-                        </div>
-                        <p class="mt-8 text-lg text-gray-600 leading-relaxed animate-fade-in">
-                            Empowering global leaders with next-generation technology solutions. We transform visions into digital reality, driving unprecedented growth and innovation.
-                        </p>
-                        <div class="mt-10 flex items-center gap-x-6">
-                            <a href="#" class="group relative inline-flex items-center justify-center">
-                                <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-violet-600 rounded-lg blur opacity-50 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-                                
-                            </a>
-                            <a href="/insights" class="group text-sm font-semibold leading-6 text-gray-900">
-                                <span class="flex items-center gap-2">
-                                    <span class="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-right after:scale-x-0 after:bg-purple-700 after:transition-transform after:duration-300 group-hover:after:origin-left group-hover:after:scale-x-100">
-                                        Explore our Insights
-                                    </span>
-                                    <span class="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<div class="relative min-h-screen overflow-hidden">
+    <!-- Dynamic Background Images -->
+    <div class="absolute inset-0 z-0">
+        {['/images/mu.jpg', '/images/muu.jpg', '/images/muuu.jpg'].map((img, index) => (
+            <div class={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === 0 ? 'opacity-100' : 'opacity-0'}`}
+                 data-bg-image>
+                <img src={img} class="w-full h-full object-cover object-center scale-105" />
             </div>
+        ))}
+    </div>
 
-            <div class="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen relative perspective">
-                <div class="relative group">
-                    <div class="absolute -inset-2 bg-gradient-to-r from-purple-600 to-violet-600 rounded-xl blur-xl opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-                    <img id="image"
-                         class="rounded-xl w-full h-auto opacity-0 transition-all duration-1000 ease-out transform hover:scale-[1.02] shadow-2xl"
-                         src="/images/zzz.jpg"/>
-                    <div class="absolute top-0 right-0 rounded-bl-xl p-6 bg-white/80 backdrop-blur-sm transition-all duration-300">
-                        <div class="flex space-x-2">
-                            <div class="w-2 h-2 rounded-full bg-purple-900 animate-pulse"></div>
-                            <div class="w-2 h-2 rounded-full bg-gray-300"></div>
-                            <div class="w-2 h-2 rounded-full bg-gray-300"></div>
-                        </div>
+    <!-- Gradient Overlays -->
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-purple-900/40 to-gray-900/80"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-violet-900/20 via-transparent to-purple-900/20 animate-gradient-slow"></div>
+    
+    <!-- Grid Texture -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:48px_48px] mix-blend-soft-light"></div>
+
+    <div class="relative isolate mx-auto max-w-7xl px-6 lg:px-8 h-screen flex items-center ">
+        <div class="mx-auto max-w-2xl lg:mx-0 lg:mt-20">
+
+            <h1 class="text-6xl font-bold tracking-tight sm:text-8xl/none bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-white animate-text-glow">
+                <span class="block [text-shadow:0_0_30px_rgba(192,132,252,0.4)]">Next-Gen</span>
+                <span class="block mt-2 [text-shadow:0_0_30px_rgba(192,132,252,0.4)]">Digital Evolution</span>
+            </h1>
+
+            <p class="mt-8 text-xl/relaxed text-purple-100/90 backdrop-blur-sm">
+                Harnessing quantum strategy and AI-driven solutions to propel enterprises into the cognitive era. 
+                Where visionaries architect tomorrow.
+            </p>
+
+            <div class="mt-12 flex gap-8">
+                <a href="/contact" class="group relative flex items-center gap-2 px-8 py-4 text-lg font-semibold transition-all duration-300
+                    bg-purple-600/20 backdrop-blur-lg ring-1 ring-purple-400/30 hover:ring-purple-400/60
+                    hover:bg-purple-600/40 rounded-2xl hover:shadow-2xl hover:shadow-purple-900/30">
+                    <span class="text-purple-100 group-hover:text-white">Begin Transformation</span>
+                    <div class="transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-110">
+                        <div class="w-4 h-4 bg-purple-300 rounded-full animate-pulse-slow"></div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
+
+    <!-- Animated Orb -->
+    <div class="absolute right-32 top-1/3 w-[600px] h-[600px] rounded-full bg-gradient-to-r from-violet-600/20 to-purple-600/20 
+        blur-[100px] animate-orb-glow -z-10"></div>
 </div>
 
 <style>
-    .perspective {
-        perspective: 1000px;
+    @keyframes text-glow {
+        0%, 100% { opacity: 0.95; }
+        50% { opacity: 1; }
     }
-    
-    @keyframes gradient-x {
+
+    @keyframes orb-glow {
+        0%, 100% { transform: scale(1); opacity: 0.4; }
+        50% { transform: scale(1.05); opacity: 0.6; }
+    }
+
+    @keyframes gradient-slow {
         0% { background-position: 0% 50%; }
         50% { background-position: 100% 50%; }
         100% { background-position: 0% 50%; }
     }
-    
-    @keyframes tilt {
-        0%, 100% { transform: rotate(-1deg); }
-        50% { transform: rotate(1deg); }
+
+    .animate-text-glow {
+        animation: text-glow 3s ease-in-out infinite;
     }
-    
-    @keyframes pulse-slow {
-        0%, 100% { opacity: 0.1; }
-        50% { opacity: 0.2; }
+
+    .animate-orb-glow {
+        animation: orb-glow 8s ease-in-out infinite;
     }
-    
-    .animate-gradient-x {
-        background-size: 200% 200%;
-        animation: gradient-x 15s ease infinite;
-    }
-    
-    .animate-tilt {
-        animation: tilt 10s infinite linear;
-    }
-    
-    .animate-pulse-slow {
-        animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    }
-    
+
     .animate-gradient-slow {
-        animation: gradient-x 8s ease infinite;
-    }
-    
-    .animate-fade-in {
-        animation: fadeIn 0.8s ease-out;
-    }
-    
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
+        background-size: 200% 200%;
+        animation: gradient-slow 15s ease infinite;
     }
 </style>
 
-<script type="module" >
-    const images = [
-        "/images/zzz.jpg",
-        "/images/img2.jpg",
-        "/images/bbb.jpg",
-    ];
-    let currentIndex = 0;
-    const imageElement = document.getElementById('image');
+<script>
+    // Background image cycler
+    const bgImages = document.querySelectorAll('[data-bg-image]');
+    let currentBg = 0;
 
-    imageElement.classList.remove('opacity-0');
-
-    function changeImage() {
-        imageElement.classList.add('opacity-0');
-        imageElement.style.transform = 'scale(0.98)';
-
-        setTimeout(() => {
-            currentIndex = (currentIndex + 1) % images.length;
-            imageElement.src = images[currentIndex];
-            imageElement.onload = () => {
-                imageElement.classList.remove('opacity-0');
-                imageElement.style.transform = 'scale(1)';
-            };
-        }, 1000);
-    }
-
-    setInterval(changeImage, 4000);
+    setInterval(() => {
+        bgImages[currentBg].classList.remove('opacity-100');
+        currentBg = (currentBg + 1) % bgImages.length;
+        bgImages[currentBg].classList.add('opacity-100');
+    }, 6000);
 </script>
